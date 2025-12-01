@@ -152,6 +152,32 @@ export default function Content() {
           </ul>
         </section>
 
+        <section id="testimonials" className="mb-6 text-slate-600">
+          <h2 className="text-xl font-semibold mb-2">Testimonials</h2>
+          <p className="mb-2">
+            Help is always recommended, but it is especially important if:
+          </p>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>Labor slows down or stops progressing.</li>
+            <li>There is intense or unusual pain.</li>
+            <li>The baby shows signs of stress (monitored by staff).</li>
+            <li>Symptoms like fever or unusual bleeding appear.</li>
+          </ul>
+        </section>
+
+        <section id="how-it-works" className="mb-6 text-slate-600">
+          <h2 className="text-xl font-semibold mb-2">How It Works</h2>
+          <p className="mb-2">
+            Help is always recommended, but it is especially important if:
+          </p>
+          <ul className="list-disc ml-6 space-y-1">
+            <li>Labor slows down or stops progressing.</li>
+            <li>There is intense or unusual pain.</li>
+            <li>The baby shows signs of stress (monitored by staff).</li>
+            <li>Symptoms like fever or unusual bleeding appear.</li>
+          </ul>
+        </section>
+
         <footer className="text-center text-gray-500 text-sm mt-6">
           Want this version in React, Markdown, or a printable PDF? I can create
           it.
