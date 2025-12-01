@@ -179,8 +179,9 @@ export default function Content() {
         </section>
 
         <footer className="text-center text-gray-500 text-sm mt-6">
-          Want this version in React, Markdown, or a printable PDF? I can create
-          it.
+          <a download className="underline" href="mary.pdf">
+            Download a printable PDF.
+          </a>
         </footer>
       </article>
     </div>
