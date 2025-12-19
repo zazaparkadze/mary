@@ -4,6 +4,7 @@ import SessionButton from "./session-button";
 import ToggleLanguage from "./language-button";
 import MaryLogo from "./mary-logo";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -16,8 +17,15 @@ export default function Header() {
         <ul className="flex gap-3">
           <li>About Me</li>
           <li>Services</li>
-          <li>Testimonials</li>
-          <li>Blog</li>
+          <li>
+            <a href="#testimonials"> Testimonials</a>
+          </li>
+          <li>
+            <a href="#how-it-works">How it Works</a>
+          </li>
+          <li>
+            <Link href={"blog"}>Blog</Link>
+          </li>
         </ul>
         <ToggleLanguage />
         <SessionButton />

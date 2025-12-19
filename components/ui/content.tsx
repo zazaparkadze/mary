@@ -154,28 +154,189 @@ export default function Content() {
 
         <section id="testimonials" className="mb-6 text-slate-600">
           <h2 className="text-xl font-semibold mb-2">Testimonials</h2>
-          <p className="mb-2">
-            Help is always recommended, but it is especially important if:
-          </p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Labor slows down or stops progressing.</li>
-            <li>There is intense or unusual pain.</li>
-            <li>The baby shows signs of stress (monitored by staff).</li>
-            <li>Symptoms like fever or unusual bleeding appear.</li>
-          </ul>
+
+          <section className="max-w-4xl mx-auto px-4 py-16">
+            <h2 className="text-3xl font-semibold text-center mb-12">
+              What Parents Are Saying
+            </h2>
+
+            <div className="space-y-6">
+              <blockquote className="bg-stone-50 border-l-4 border-rose-300 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed">
+                  “Having <strong>Mary</strong> as my doula was the best
+                  decision I made during my pregnancy. She made me feel calm,
+                  confident, and supported every step of the way. During labor,
+                  her presence grounded me and reminded me of my strength. I
+                  truly couldn’t have done this without her.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — Client Testimonial
+                </footer>
+              </blockquote>
+
+              <blockquote className="bg-stone-50 border-l-4 border-rose-300 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed">
+                  “From our first meeting, <strong>Mary</strong> made me feel
+                  heard and understood. She respected my wishes, explained
+                  everything clearly, and stayed by my side through the most
+                  intense moments. I felt safe, empowered, and deeply
+                  supported.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — Client Testimonial
+                </footer>
+              </blockquote>
+
+              <blockquote className="bg-stone-50 border-l-4 border-rose-300 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed">
+                  “As a first-time mom, I was nervous and unsure of what to
+                  expect.
+                  <strong>Mary</strong> answered all my questions with patience
+                  and kindness and helped me trust my body. I am so grateful for
+                  this positive birth experience.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — First-Time Parent
+                </footer>
+              </blockquote>
+
+              <blockquote className="bg-stone-50 border-l-4 border-rose-300 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed">
+                  “<strong>Mary</strong> helped me feel strong and in control
+                  throughout my birth. Her breathing techniques, encouragement,
+                  and calm energy made a huge difference. She is knowledgeable,
+                  compassionate, and truly passionate about her work.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — Client Testimonial
+                </footer>
+              </blockquote>
+
+              <blockquote className="bg-stone-50 border-l-4 border-rose-300 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed">
+                  “After birth, <strong>Mary</strong>’s support was just as
+                  valuable. She helped me adjust emotionally and practically,
+                  always reminding me that I was doing an amazing job. Every new
+                  parent deserves this kind of care.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — Postpartum Client
+                </footer>
+              </blockquote>
+
+              <blockquote className="bg-rose-50 border-l-4 border-rose-400 p-6 rounded-lg shadow-sm">
+                <p className="text-gray-700 leading-relaxed font-medium">
+                  “Kind, professional, and incredibly supportive. I felt
+                  empowered and cared for throughout my entire birth journey.”
+                </p>
+                <footer className="mt-3 text-sm text-gray-500">
+                  — Client Review
+                </footer>
+              </blockquote>
+            </div>
+          </section>
         </section>
 
-        <section id="how-it-works" className="mb-6 text-slate-600">
-          <h2 className="text-xl font-semibold mb-2">How It Works</h2>
-          <p className="mb-2">
-            Help is always recommended, but it is especially important if:
+        <section
+          id="how-it-works"
+          className="max-w-6xl mx-auto px-4 py-20 mt-6 text-slate-600"
+        >
+          <h2 className="text-3xl font-semibold text-center mb-6">
+            How It Works
+          </h2>
+
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-14">
+            Every family is unique. My role as a doula is to offer continuous,
+            compassionate support before, during, and after birth — honoring
+            your preferences, values, and intuition.
           </p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>Labor slows down or stops progressing.</li>
-            <li>There is intense or unusual pain.</li>
-            <li>The baby shows signs of stress (monitored by staff).</li>
-            <li>Symptoms like fever or unusual bleeding appear.</li>
-          </ul>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* <!-- Step 1 --> */}
+            <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-400 text-2xl font-semibold mb-4">
+                01
+              </div>
+              <h3 className="text-xl font-medium mb-3">Initial Consultation</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We begin with a relaxed meeting to get to know each other. We
+                talk about your pregnancy, birth hopes, past experiences, and
+                any questions or concerns you may have. This is a space for
+                listening, trust, and connection.
+              </p>
+            </div>
+
+            {/* <!-- Step 2 --> */}
+            <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-400 text-2xl font-semibold mb-4">
+                02
+              </div>
+              <h3 className="text-xl font-medium mb-3">Prenatal Support</h3>
+              <p className="text-gray-700 leading-relaxed">
+                During pregnancy, we meet to prepare emotionally and
+                practically. We explore birth preferences, comfort techniques,
+                breathing, partner support, and ways to feel informed and
+                confident as you approach your birth.
+              </p>
+            </div>
+
+            {/* <!-- Step 3 --> */}
+            <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-400 text-2xl font-semibold mb-4">
+                03
+              </div>
+              <h3 className="text-xl font-medium mb-3">Birth Support</h3>
+              <p className="text-gray-700 leading-relaxed">
+                I offer continuous presence during labor, providing emotional
+                reassurance, physical comfort, and calm guidance. I support you
+                and your partner while respecting your birth team and medical
+                providers.
+              </p>
+            </div>
+
+            {/* <!-- Step 4 --> */}
+            <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-400 text-2xl font-semibold mb-4">
+                04
+              </div>
+              <h3 className="text-xl font-medium mb-3">
+                Immediate Postpartum Care
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                After birth, I remain present to help you settle in, offering
+                gentle support with bonding, feeding, and emotional processing
+                of your birth experience.
+              </p>
+            </div>
+
+            {/* <!-- Step 5 --> */}
+            <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-400 text-2xl font-semibold mb-4">
+                05
+              </div>
+              <h3 className="text-xl font-medium mb-3">Postpartum Follow-Up</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We reconnect after birth to reflect, answer questions, and
+                support your transition into parenthood. This time focuses on
+                reassurance, rest, and emotional care.
+              </p>
+            </div>
+
+            {/*  <!-- Step 6 --> */}
+            <div className="bg-rose-50 rounded-2xl p-8 shadow-sm">
+              <div className="text-rose-500 text-2xl font-semibold mb-4">
+                06
+              </div>
+              <h3 className="text-xl font-medium mb-3">
+                Ongoing Respect & Care
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                My approach is non-judgmental and inclusive. I support all birth
+                paths and honor your choices. You are always at the center of
+                your own experience.
+              </p>
+            </div>
+          </div>
         </section>
 
         <footer className="text-center text-gray-500 text-sm mt-6">
