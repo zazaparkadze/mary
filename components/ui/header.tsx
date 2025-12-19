@@ -5,6 +5,7 @@ import ToggleLanguage from "./language-button";
 import MaryLogo from "./mary-logo";
 import { useState } from "react";
 import Link from "next/link";
+/* import Navlist from "./navlist"; */
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ export default function Header() {
       <div className="grid place-content-center">
         <MaryLogo />
       </div>
+      {/*  <Navlist /> */}
       <div className="hidden lg:flex gap-3 items-center">
         <ul className="flex gap-3">
           <li>About Me</li>
@@ -44,11 +46,18 @@ export default function Header() {
            animate-mylist origin-top
            "
         >
-          <ul className="flex flex-col items-center justify-center gap-3 py-3">
+          <ul className="flex gap-3 flex-col items-center justify-center py-3">
             <li>About Me</li>
             <li>Services</li>
-            <li>Testimonials</li>
-            <li>Blog</li>
+            <li>
+              <a href="#testimonials"> Testimonials</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How it Works</a>
+            </li>
+            <li>
+              <Link href={"blog"}>Blog</Link>
+            </li>
             <li className="flex gap-x-3">
               <ToggleLanguage />
               <SessionButton />

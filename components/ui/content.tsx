@@ -252,7 +252,6 @@ export default function Content() {
           </p>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* <!-- Step 1 --> */}
             <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-400 text-2xl font-semibold mb-4">
                 01
@@ -266,7 +265,6 @@ export default function Content() {
               </p>
             </div>
 
-            {/* <!-- Step 2 --> */}
             <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-400 text-2xl font-semibold mb-4">
                 02
@@ -280,7 +278,6 @@ export default function Content() {
               </p>
             </div>
 
-            {/* <!-- Step 3 --> */}
             <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-400 text-2xl font-semibold mb-4">
                 03
@@ -294,7 +291,6 @@ export default function Content() {
               </p>
             </div>
 
-            {/* <!-- Step 4 --> */}
             <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-400 text-2xl font-semibold mb-4">
                 04
@@ -309,7 +305,6 @@ export default function Content() {
               </p>
             </div>
 
-            {/* <!-- Step 5 --> */}
             <div className="bg-stone-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-400 text-2xl font-semibold mb-4">
                 05
@@ -322,7 +317,6 @@ export default function Content() {
               </p>
             </div>
 
-            {/*  <!-- Step 6 --> */}
             <div className="bg-rose-50 rounded-2xl p-8 shadow-sm">
               <div className="text-rose-500 text-2xl font-semibold mb-4">
                 06
