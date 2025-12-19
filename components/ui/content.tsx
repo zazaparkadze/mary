@@ -1,6 +1,6 @@
 export default function Content() {
   return (
-    <div className="flex flex-col grow p-5">
+    <div className="flex flex-col grow p-5 w-full max-w-7xl">
       <header className="text-center mb-6">
         <h1 className="text-2xl md:text-3xl font-semibold mb-2">
           Understanding Childbirth: What Happens, Challenges, and Professional

@@ -1,7 +1,7 @@
 "use client";
 import HamburgerButton from "./hamburger-button";
 import SessionButton from "./session-button";
-import ToggleLanguage from "./language";
+import ToggleLanguage from "./language-button";
 import MaryLogo from "./mary-logo";
 import { useState } from "react";
 
