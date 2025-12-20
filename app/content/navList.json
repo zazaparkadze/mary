@@ -1,0 +1,18 @@
+{
+  "en": {
+    "aboutme": "About me",
+    "howitworks": "How it Works",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "services": "Services",
+    "bookasession": "Book a Session"
+  },
+  "he": {
+    "aboutme": "עליי",
+    "howitworks": "איך זה עובד",
+    "testimonials": "המלצות",
+    "blog": "בלוג",
+    "services": "שירותים",
+    "bookasession": "להזמין מפגש"
+  }
+}

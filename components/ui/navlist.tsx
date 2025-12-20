@@ -1,31 +1,36 @@
 import Link from "next/link";
 import SessionButton from "./session-button";
 import ToggleLanguage from "./language-button";
+import { he, en } from "../../app/content/navList.json";
 
 type cssClasses = {
   divClass: string;
   ulClass: string;
+  locale: Locale;
 };
 
-export default function Navlist({ divClass, ulClass }: cssClasses) {
+export default function Navlist({ divClass, ulClass, locale }: cssClasses) {
+  const translation = { he, en };
+
+  console.log(locale, "from navlist");
   return (
     <div className={`${divClass}`}>
       <ul className={`${ulClass}`}>
-        <li>About Me</li>
-        <li>Services</li>
+        <li>{translation[locale].aboutme}</li>
+        <li>{translation[locale].services}</li>
         <li>
-          <a href="#testimonials"> Testimonials</a>
+          <a href="#testimonials"> {translation[locale].testimonials}</a>
         </li>
         <li>
-          <a href="#how-it-works">How it Works</a>
+          <a href="#how-it-works">{translation[locale].howitworks}</a>
         </li>
         <li>
-          <Link href={"blog"}>Blog</Link>
+          <Link href={"blog"}>{translation[locale].blog}</Link>
         </li>
       </ul>
       <div className="flex gap-3">
-        <ToggleLanguage />
-        <SessionButton />
+        <ToggleLanguage locale={locale} />
+        <SessionButton sessionButtontext={translation[locale].bookasession} />
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import Content from "@/components/ui/content";
-export default function Home() {
+
+export default async function Home({ params }: { params: Params }) {
+  const { locale } = await params;
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans dark:bg-black">
-      <Header />
-      <Content />
+      <Header locale={locale} />
+      <Content locale={locale} />
       <Footer />
     </div>
   );

@@ -1,7 +1,11 @@
 import { Button } from "./button";
 import { Video } from "lucide-react";
 
-export default function SessionButton() {
+export default function SessionButton({
+  sessionButtontext,
+}: {
+  sessionButtontext: string;
+}) {
   const handleClick = () => {
     const message =
       "Hello, I am Mary, Your message please, and I'll be back asap";
@@ -20,7 +24,7 @@ export default function SessionButton() {
        text-[#a36f6f] hover:bg-[#a36f6f] hover:text-white border-[#a36f6f]"
     >
       <Video className="fill-[#a36f6f]" />
-      <p>Book a Session</p>
+      <p>{sessionButtontext}</p>
     </Button>
   );
 }

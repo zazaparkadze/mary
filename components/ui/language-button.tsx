@@ -1,5 +1,6 @@
 "use client";
 import { LucideGlobe, ChevronDown } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -10,8 +11,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 
-export default function ToggleLanguage() {
-  const [lang, setLang] = useState("עברית");
+export default function ToggleLanguage({ locale }: { locale: Locale }) {
+  const router = useRouter();
+  const [lang, setLang] = useState(locale === "en" ? "English" : "עברית");
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -33,7 +35,10 @@ export default function ToggleLanguage() {
         {lang !== "English" && (
           <DropdownMenuItem
             className="text-[#a36f6f] hover:bg-[#a36f6f]! hover:text-white!"
-            onClick={() => setLang("English")}
+            onClick={() => {
+              setLang("English");
+              router.push("/en");
+            }}
           >
             English
           </DropdownMenuItem>
@@ -41,19 +46,22 @@ export default function ToggleLanguage() {
         {lang !== "עברית" && (
           <DropdownMenuItem
             className="text-[#a36f6f] hover:bg-[#a36f6f]! hover:text-white!"
-            onClick={() => setLang("עברית")}
+            onClick={() => {
+              setLang("עברית");
+              router.push("/he");
+            }}
           >
             עברית
           </DropdownMenuItem>
         )}
-        {lang !== "Русский" && (
+        {/*   {lang !== "Русский" && (
           <DropdownMenuItem
             className="text-[#a36f6f] hover:bg-[#a36f6f]! hover:text-white!"
             onClick={() => setLang("Русский")}
           >
             Русский
-          </DropdownMenuItem>
-        )}
+          </DropdownMenuItem> [#a36f6f]
+        )} */}
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -1,14 +1,16 @@
-export default function Content() {
+import { he } from "@/app/content/he.content.json";
+import { en } from "@/app/content/en.content.json";
+const translate = { en, he };
+
+export default function Content({ locale }: { locale: Locale }) {
   return (
     <div className="flex flex-col grow p-5 w-full max-w-7xl">
       <header className="text-center mb-6">
         <h1 className="text-2xl md:text-3xl font-semibold mb-2">
-          Understanding Childbirth: What Happens, Challenges, and Professional
-          Help
+          {translate[locale].understandingChildBirth}
         </h1>
         <p className="text-gray-600 text-base">
-          A clear, safe overview of childbirth — written in simple, calm
-          language.
+          {translate[locale].aClearSafeOverview}
         </p>
       </header>
       <article className="bg-white shadow-lg border border-gray-200 rounded-xl p-6 md:p-8">
@@ -21,31 +23,31 @@ export default function Content() {
         <nav className="flex flex-wrap gap-3 mt-2 mb-6">
           <a
             href="#what-is-childbirth"
-            className="text-indigo-600 text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
             What is childbirth?
           </a>
           <a
             href="#common-challenges"
-            className="text-indigo-600 text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
             Common challenges
           </a>
           <a
             href="#who-helps"
-            className="text-indigo-600 text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
             Professionals who help
           </a>
           <a
             href="#when-to-seek-help"
-            className="text-indigo-600 text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
             When to get help
           </a>
           <a
             href="#why-it-matters"
-            className="text-indigo-600 text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
             Why it matters
           </a>
