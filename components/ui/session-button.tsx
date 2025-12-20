@@ -10,7 +10,7 @@ export default function SessionButton({
     const message =
       "Hello, I am Mary, Your message please, and I'll be back asap";
     const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/${+9725464408805}?text=${encodedMessage}`;
+    const url = `https://wa.me/${+972546440805}?text=${encodedMessage}`;
 
     window.open(url, "_blank");
   };
