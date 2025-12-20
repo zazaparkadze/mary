@@ -11,8 +11,6 @@ type cssClasses = {
 
 export default function Navlist({ divClass, ulClass, locale }: cssClasses) {
   const translation = { he, en };
-
-  console.log(locale, "from navlist");
   return (
     <div className={`${divClass}`}>
       <ul className={`${ulClass}`}>
