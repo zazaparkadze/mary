@@ -7,8 +7,7 @@ export default function SessionButton({
   sessionButtontext: string;
 }) {
   const handleClick = () => {
-    const message =
-      "Hello, I am Mary, Your message please, and I'll be back asap";
+    const message = "Hello, I'd like to get more details, please";
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${+972546440805}?text=${encodedMessage}`;
 
