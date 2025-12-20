@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 
-export default function ToggleLanguage({ locale }: { locale: Locale }) {
+export default function ToggleLanguage({ locale }: { locale: string }) {
   const router = useRouter();
   const [lang, setLang] = useState(locale === "en" ? "English" : "עברית");
   return (

@@ -22,9 +22,10 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string | Locale }>;
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const localeParams = await params;
+  const locale = localeParams.locale as "en" | "he";
   const isRTL = locale === "en";
   return (
     <html lang={locale} dir={!isRTL ? "rtl" : "ltr"}>

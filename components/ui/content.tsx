@@ -2,15 +2,15 @@ import { he } from "@/app/content/he.content.json";
 import { en } from "@/app/content/en.content.json";
 const translate = { en, he };
 
-export default function Content({ locale }: { locale: Locale }) {
+export default function Content({ locale }: { locale: string }) {
   return (
     <div className="flex flex-col grow p-5 w-full max-w-7xl">
       <header className="text-center mb-6">
         <h1 className="text-2xl md:text-3xl font-semibold mb-2">
-          {translate[locale].understandingChildBirth}
+          {translate[locale as "en" | "he"].understandingChildBirth}
         </h1>
         <p className="text-gray-600 text-base">
-          {translate[locale].aClearSafeOverview}
+          {translate[locale as "en" | "he"].aClearSafeOverview}
         </p>
       </header>
       <article className="bg-white shadow-lg border border-gray-200 rounded-xl p-6 md:p-8">
