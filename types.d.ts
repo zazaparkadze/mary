@@ -1,3 +1,0 @@
-type Params = {
-  locale: string;
-};

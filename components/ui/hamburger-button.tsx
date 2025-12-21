@@ -29,7 +29,6 @@ export default function HamburgerButton({
     sm: { btn: "w-8 h-8", barW: "w-6", barH: "h-[2px]", gap: "gap-1.5" },
     md: { btn: "w-9 h-9", barW: "w-7", barH: "h-[2px]", gap: "gap-1.5" },
   }[size];
-  /* lg: { btn: "w-12 h-12", barW: "w-7", barH: "h-[2px]", gap: "gap-1.5" }, */
 
   return (
     <Button
