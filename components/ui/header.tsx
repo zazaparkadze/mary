@@ -15,18 +15,18 @@ export default function Header({ locale }: { locale: string }) {
   };
   const cssClassesSm = {
     divClass:
-      "group-data-[navlist=false]:hidden  group-data-[navlist=true]:flex flex-col items-center justify-center bg-black/5 backdrop-blur-[3px] animate-mylist origin-top",
+      "group-data-[navlist=false]:hidden  group-data-[navlist=true]:flex flex-col items-center justify-center bg-black/5 backdrop-blur-[3px] animate-nav origin-top",
     ulClass: "flex gap-3 flex-col items-center justify-center py-3",
     locale: locale,
   };
   return (
-    <div className="container flex sticky top-0 w-full justify-between max-w-7xl mx-auto bg-background p-4 lg:p-8 animate-mylist origin-top">
+    <div className="container flex sticky top-0 w-full justify-between max-w-7xl mx-auto bg-background p-4 lg:p-8 animate-nav origin-top">
       <div className="grid place-content-center">
         <MaryLogo />
       </div>
       <Navlist {...cssClassesLg} />
       <div
-        className="group w-full fixed inset-0  mt-15 lg:hidden"
+        className="group w-full fixed inset-0  mt-15 lg:hidden animate-nav origin-top"
         data-navlist={open ? "true" : "false"}
       >
         <Navlist {...cssClassesSm} />
