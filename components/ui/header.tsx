@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import Navlist from "./navlist";
 
-export default function Header({ locale }: { locale: string }) {
+export default function Header({ locale }: { locale: "en" | "he" }) {
   const [open, setOpen] = useState(false);
   const cssClassesLg = {
     divClass: "hidden lg:flex gap-3 items-center",

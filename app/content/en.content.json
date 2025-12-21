@@ -1,6 +1,113 @@
 {
   "en": {
     "understandingChildBirth": "Understanding Childbirth: What Happens, Challenges, and Professional Help",
-    "aClearSafeOverview": "A clear, safe overview of childbirth — written in simple, calm language."
+    "aClearSafeOverview": "A clear, safe overview of childbirth — written in simple, calm language.",
+
+    "introText": "This article explains childbirth in an informative, non-graphic way. It is suitable for basic health knowledge and understanding how professionals support the process.",
+
+    "nav": {
+      "whatIsChildbirth": "What is childbirth?",
+      "commonChallenges": "Common challenges",
+      "whoHelps": "Professionals who help",
+      "whenToSeekHelp": "When to get help",
+      "whyItMatters": "Why it matters"
+    },
+
+    "whatIsChildbirth": {
+      "title": "What is childbirth?",
+      "description": "Childbirth is the process of delivering a baby. It usually happens in three stages:",
+      "stages": [
+        "Early and active labor — contractions help the cervix open.",
+        "Birth — the baby moves through the birth canal.",
+        "Placenta delivery — the process completes after the baby is born."
+      ]
+    },
+
+    "commonChallenges": {
+      "title": "Common challenges",
+      "description": "Some difficulties may occur during childbirth, such as:",
+      "items": [
+        "Long labor — sometimes progress is slower than expected.",
+        "Pain or exhaustion — birth is physically intense, so support is important.",
+        "Baby’s position — not all positions make birth easier and may require assistance.",
+        "Unexpected changes — such as shifts in heart rate or contraction patterns."
+      ],
+      "note": "These challenges are common, and trained professionals monitor them to keep both the parent and baby safe."
+    },
+
+    "whoHelps": {
+      "title": "Professionals who help",
+      "items": [
+        "Obstetricians (OB-GYNs) — doctors specialized in pregnancy and birth.",
+        "Midwives — trained professionals who support many types of deliveries.",
+        "Nurses — assist with monitoring and care during labor.",
+        "Doulas — provide emotional and practical (non-medical) support."
+      ]
+    },
+
+    "whenToSeekHelp": {
+      "title": "When to seek professional help",
+      "description": "Professional support is always recommended, especially if:",
+      "items": [
+        "Labor slows down or stops progressing.",
+        "There is intense or unusual pain.",
+        "The baby shows signs of stress (monitored by medical staff).",
+        "Symptoms such as fever or unusual bleeding appear."
+      ]
+    },
+
+    "whyItMatters": {
+      "title": "Why understanding childbirth matters",
+      "items": [
+        "Builds essential basic health knowledge.",
+        "Helps you support friends or family who may be expecting.",
+        "Acknowledges the physical and emotional effort involved in birth."
+      ]
+    },
+
+    "testimonials": {
+      "title": "Testimonials",
+      "heading": "What Parents Are Saying",
+      "items": [
+        "Having Mary as my doula was the best decision I made during my pregnancy. She helped me feel calm, confident, and supported every step of the way.",
+        "From our first meeting, Mary made me feel heard and respected. I felt safe, empowered, and deeply supported.",
+        "As a first-time parent, Mary helped me trust my body and feel prepared for birth.",
+        "Mary’s calm presence, knowledge, and encouragement made a huge difference during my labor.",
+        "After birth, Mary’s support was just as valuable, helping me adjust emotionally and practically."
+      ]
+    },
+
+    "howItWorks": {
+      "title": "How It Works",
+      "description": "Every family is unique. My role as a doula is to offer continuous, compassionate support before, during, and after birth — honoring your preferences and values.",
+      "steps": [
+        {
+          "title": "Initial Consultation",
+          "text": "We begin with a relaxed meeting to get to know each other and discuss your hopes, experiences, and questions."
+        },
+        {
+          "title": "Prenatal Support",
+          "text": "We prepare emotionally and practically through discussions, breathing techniques, and birth preferences."
+        },
+        {
+          "title": "Birth Support",
+          "text": "I provide continuous presence during labor, offering reassurance, comfort, and calm guidance."
+        },
+        {
+          "title": "Immediate Postpartum Care",
+          "text": "I remain available after birth to support bonding, feeding, and emotional processing."
+        },
+        {
+          "title": "Postpartum Follow-Up",
+          "text": "We reconnect after birth to reflect, answer questions, and support your transition into parenthood."
+        },
+        {
+          "title": "Ongoing Respect & Care",
+          "text": "My approach is inclusive, non-judgmental, and centered on your choices and experience."
+        }
+      ]
+    },
+
+    "downloadPdf": "Download a printable PDF"
   }
 }

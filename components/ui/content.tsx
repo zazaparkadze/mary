@@ -2,127 +2,116 @@ import { he } from "@/app/content/he.content.json";
 import { en } from "@/app/content/en.content.json";
 const translate = { en, he };
 
-export default function Content({ locale }: { locale: string }) {
+export default function Content({ locale }: { locale: "en" | "he" }) {
   return (
     <div className="flex flex-col grow p-5 w-full max-w-7xl">
       <header className="text-center mb-6">
         <h1 className="text-2xl md:text-3xl font-semibold mb-2">
-          {translate[locale as "en" | "he"].understandingChildBirth}
+          {translate[locale].understandingChildBirth}
         </h1>
         <p className="text-gray-600 text-base">
-          {translate[locale as "en" | "he"].aClearSafeOverview}
+          {translate[locale].aClearSafeOverview}
         </p>
       </header>
       <article className="bg-white shadow-lg border border-gray-200 rounded-xl p-6 md:p-8">
-        <p className="text-gray-600 mb-4">
-          This article explains childbirth without graphic detail. It&apos;s
-          helpful for basic health knowledge and understanding how professionals
-          support the process.
-        </p>
+        <p className="text-gray-600 mb-4">{translate[locale].introText}</p>
 
         <nav className="flex flex-wrap gap-3 mt-2 mb-6">
           <a
             href="#what-is-childbirth"
             className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
-            What is childbirth?
+            {translate[locale].nav.whatIsChildbirth}
           </a>
           <a
             href="#common-challenges"
             className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
-            Common challenges
+            {translate[locale].nav.commonChallenges}
           </a>
           <a
             href="#who-helps"
             className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
-            Professionals who help
+            {translate[locale].nav.whoHelps}
           </a>
           <a
             href="#when-to-seek-help"
             className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
-            When to get help
+            {translate[locale].nav.whenToSeekHelp}
           </a>
           <a
             href="#why-it-matters"
             className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
           >
-            Why it matters
+            {translate[locale].nav.whyItMatters}
           </a>
         </nav>
 
         <section id="what-is-childbirth" className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">What is childbirth?</h2>
+          <h2 className="text-xl font-semibold mb-2">
+            {translate[locale].whatIsChildbirth.title}
+          </h2>
           <p className="mb-2">
-            Childbirth is the process of delivering a baby. It typically happens
-            in three stages:
+            {translate[locale].whatIsChildbirth.description}
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>
-              <strong>Early and active labor</strong> — the uterus contracts so
-              the cervix can open.
+              <strong>
+                {translate[locale].whatIsChildbirth.stages[0].split(" - ")[0]}
+              </strong>{" "}
+              {translate[locale].whatIsChildbirth.stages[0].split(" - ")[1]}
             </li>
             <li>
-              <strong>Birth</strong> — the baby moves through the birth canal.
+              <strong>
+                {" "}
+                {translate[locale].whatIsChildbirth.stages[1].split(" - ")[0]}
+              </strong>{" "}
+              {translate[locale].whatIsChildbirth.stages[1].split(" - ")[1]}
             </li>
             <li>
-              <strong>Placenta delivery</strong> — the process completes after
-              the baby is born.
+              <strong>
+                {translate[locale].whatIsChildbirth.stages[2].split(" - ")[0]}
+              </strong>{" "}
+              {translate[locale].whatIsChildbirth.stages[2].split(" - ")[1]}
             </li>
           </ul>
         </section>
 
         <section id="common-challenges" className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">Common challenges</h2>
+          <h2 className="text-xl font-semibold mb-2">
+            {translate[locale].commonChallenges.title}
+          </h2>
           <p className="mb-2">
-            Some difficulties may occur during childbirth, such as:
+            {translate[locale].commonChallenges.description}
           </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>
-              <strong>Long labor</strong> — sometimes progress is slower than
-              expected.
+              <strong>
+                {translate[locale].commonChallenges.items[0].split(" - ")[0]}
+              </strong>{" "}
+              {translate[locale].commonChallenges.items[0].split(" - ")[1]}
             </li>
-            <li>
-              <strong>Pain or exhaustion</strong> — birth is physically intense,
-              so support is important.
-            </li>
-            <li>
-              <strong>Baby&apos;s position</strong> — not all positions make
-              birth easy, requiring adjustment or assistance.
-            </li>
-            <li>
-              <strong>Unexpected changes</strong> — like shifts in heart rate or
-              contraction patterns.
-            </li>
+            <li>{translate[locale].commonChallenges.items[1]}</li>
+            <li>{translate[locale].commonChallenges.items[2]}</li>
+            <li>{translate[locale].commonChallenges.items[3]}</li>
           </ul>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded mt-4 text-sm">
-            These challenges are common, and trained professionals monitor them
-            to keep both the parent and baby safe.
+            {translate[locale].commonChallenges.note}
           </div>
         </section>
 
         <section id="who-helps" className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">Professionals who help</h2>
+          <h2 className="text-xl font-semibold mb-2">
+            {translate[locale].whoHelps.title}
+          </h2>
           <ul className="list-disc ml-6 space-y-1">
-            <li>
-              <strong>Obstetricians (OB-GYNs)</strong> — doctors specialized in
-              pregnancy and birth.
-            </li>
-            <li>
-              <strong>Midwives</strong> — trained professionals who support many
-              kinds of deliveries.
-            </li>
-            <li>
-              <strong>Nurses</strong> — help monitor health and provide care
-              during labor.
-            </li>
-            <li>
-              <strong>Doulas</strong> — offer emotional and practical support
-              (non-medical).
-            </li>
+            <li>{translate[locale].whoHelps.items[0]}</li>
+            <li>{translate[locale].whoHelps.items[1]}</li>
+            <li>{translate[locale].whoHelps.items[2]}</li>
+            <li>{translate[locale].whoHelps.items[3]}</li>
           </ul>
         </section>
 
