@@ -16,7 +16,7 @@
     "whatIsChildbirth": {
       "title": "What is childbirth?",
       "description": "Childbirth is the process of delivering a baby. It usually happens in three stages:",
-      "stages": [
+      "items": [
         "Early and active labor — contractions help the cervix open.",
         "Birth — the baby moves through the birth canal.",
         "Placenta delivery — the process completes after the baby is born."
@@ -58,6 +58,7 @@
 
     "whyItMatters": {
       "title": "Why understanding childbirth matters",
+      "description": "Professional support:",
       "items": [
         "Builds essential basic health knowledge.",
         "Helps you support friends or family who may be expecting.",
@@ -67,13 +68,13 @@
 
     "testimonials": {
       "title": "Testimonials",
-      "heading": "What Parents Are Saying",
+      "description": "What Parents Are Saying",
       "items": [
-        "Having Mary as my doula was the best decision I made during my pregnancy. She helped me feel calm, confident, and supported every step of the way.",
-        "From our first meeting, Mary made me feel heard and respected. I felt safe, empowered, and deeply supported.",
-        "As a first-time parent, Mary helped me trust my body and feel prepared for birth.",
-        "Mary’s calm presence, knowledge, and encouragement made a huge difference during my labor.",
-        "After birth, Mary’s support was just as valuable, helping me adjust emotionally and practically."
+        "Having Mary as my doula was the best decision I made during my pregnancy. She helped me feel calm, confident, and supported every step of the way. During labor, her presence grounded me and reminded me of my strength. Itruly couldn’t have done this without her.",
+        "From our first meeting, Mary made me feel heard and understood. She respected my wishes, explained everything clearly, and stayed by my side through the most intense moments. I felt safe, empowered, and deeply supported.",
+        "As a first-time mom, I was nervous and unsure of what to expect.Mary answered all my questions with patience and kindness and helped me trust my body. I am so grateful for this positive birth experience.",
+        "Mary helped me feel strong and in control throughout my birth. Her breathing techniques, encouragement, and calm energy made a huge difference. She is knowledgeable, compassionate, and truly passionate about her work.",
+        "After birth, Mary’s support was just as valuable. She helped me adjust emotionally and practically, always reminding me that I was doing an amazing job. Every new parent deserves this kind of care."
       ]
     },
 
@@ -82,32 +83,38 @@
       "description": "Every family is unique. My role as a doula is to offer continuous, compassionate support before, during, and after birth — honoring your preferences and values.",
       "steps": [
         {
+          "id": 1,
           "title": "Initial Consultation",
-          "text": "We begin with a relaxed meeting to get to know each other and discuss your hopes, experiences, and questions."
+          "text": "We begin with a relaxed meeting to get to know each other. We talk about your pregnancy, birth hopes, past experiences, and any questions or concerns you may have. This is a space for listening, trust, and connection."
         },
         {
+          "id": 2,
           "title": "Prenatal Support",
-          "text": "We prepare emotionally and practically through discussions, breathing techniques, and birth preferences."
+          "text": "During pregnancy, we meet to prepare emotionally and practically. We explore birth preferences, comfort techniques, breathing, partner support, and ways to feel informed and confident as you approach your birth."
         },
         {
+          "id": 3,
           "title": "Birth Support",
-          "text": "I provide continuous presence during labor, offering reassurance, comfort, and calm guidance."
+          "text": "I offer continuous presence during labor, providing emotional reassurance, physical comfort, and calm guidance. I support you and your partner while respecting your birth team and medical providers."
         },
         {
+          "id": 4,
           "title": "Immediate Postpartum Care",
-          "text": "I remain available after birth to support bonding, feeding, and emotional processing."
+          "text": "After birth, I remain present to help you settle in, offering gentle support with bonding, feeding, and emotional processing of your birth experience."
         },
         {
+          "id": 5,
           "title": "Postpartum Follow-Up",
-          "text": "We reconnect after birth to reflect, answer questions, and support your transition into parenthood."
+          "text": "We reconnect after birth to reflect, answer questions, and support your transition into parenthood. This time focuses on reassurance, rest, and emotional care."
         },
         {
+          "id": 6,
           "title": "Ongoing Respect & Care",
-          "text": "My approach is inclusive, non-judgmental, and centered on your choices and experience."
+          "text": "My approach is non-judgmental and inclusive. I support all birth paths and honor your choices. You are always at the center of your own experience."
         }
       ]
     },
-
+    "clientReview": "Kind, professional, and incredibly supportive. I felt empowered and cared for throughout my entire birth journey",
     "downloadPdf": "Download a printable PDF"
   }
 }
