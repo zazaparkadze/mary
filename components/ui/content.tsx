@@ -18,40 +18,17 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
       </header>
       <article className="bg-white shadow-lg border border-gray-200 rounded-xl p-6 md:p-8">
         <p className="text-gray-600 mb-4">{translate[locale].introText}</p>
-
         <nav className="flex flex-wrap gap-3 mt-2 mb-6">
-          <a
-            href="#what-is-childbirth"
-            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
-          >
-            {translate[locale].nav.whatIsChildbirth}
-          </a>
-          <a
-            href="#common-challenges"
-            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
-          >
-            {translate[locale].nav.commonChallenges}
-          </a>
-          <a
-            href="#who-helps"
-            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
-          >
-            {translate[locale].nav.whoHelps}
-          </a>
-          <a
-            href="#when-to-seek-help"
-            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
-          >
-            {translate[locale].nav.whenToSeekHelp}
-          </a>
-          <a
-            href="#why-it-matters"
-            className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
-          >
-            {translate[locale].nav.whyItMatters}
-          </a>
+          {Object.entries(translate[locale].nav).map(([key, label]) => (
+            <a
+              key={key}
+              href={`#${key}`}
+              className="text-[#a36f6f] text-sm border border-indigo-200 bg-indigo-50 px-3 py-1 rounded-full"
+            >
+              {label}
+            </a>
+          ))}
         </nav>
-
         <Topic topic={translate[locale].whatIsChildbirth} />
         <Topic topic={translate[locale].commonChallenges} />
         <section id="common-challenges" className="mb-6">
@@ -59,23 +36,11 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
             {translate[locale].commonChallenges.note}
           </div>
         </section>
-
-        <section id="who-helps" className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">
-            {translate[locale].whoHelps.title}
-          </h2>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>{translate[locale].whoHelps.items[0]}</li>
-            <li>{translate[locale].whoHelps.items[1]}</li>
-            <li>{translate[locale].whoHelps.items[2]}</li>
-            <li>{translate[locale].whoHelps.items[3]}</li>
-          </ul>
-        </section>
-
+        <Topic topic={translate[locale].whoHelps} />
         <Topic topic={translate[locale].whenToSeekHelp} />
         <Topic topic={translate[locale].whyItMatters} />
         <Testimonials testimonials={translate[locale].testimonials} />
-        <section className="max-w-4xl mx-auto px-4 py-16">
+        <section className="max-w-4xl mx-auto px-4 py-6">
           <section id="testimonials" className="mb-6 text-slate-600">
             <div className="space-y-6">
               <blockquote className="bg-rose-50 border-l-4 border-rose-400 p-6 rounded-lg shadow-sm">

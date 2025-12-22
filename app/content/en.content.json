@@ -37,6 +37,7 @@
 
     "whoHelps": {
       "title": "Professionals who help",
+      "description": "High level professionals",
       "items": [
         "Obstetricians (OB-GYNs) — doctors specialized in pregnancy and birth.",
         "Midwives — trained professionals who support many types of deliveries.",
