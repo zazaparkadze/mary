@@ -43,8 +43,8 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
           </div>
         </section>
         <Topic topic={translate[locale].whoHelps} id="whoHelps" />
-        <Topic topic={translate[locale].whenToSeekHelp} id="henToSeekHelp" />
-        <Topic topic={translate[locale].whyItMatters} id="hyItMatters" />
+        <Topic topic={translate[locale].whenToSeekHelp} id="whenToSeekHelp" />
+        <Topic topic={translate[locale].whyItMatters} id="whyItMatters" />
         <Testimonials testimonials={translate[locale].testimonials} />
         <section className="max-w-4xl mx-auto px-4 py-6">
           <section id="testimonials" className="mb-6 text-slate-600">
