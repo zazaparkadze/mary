@@ -15,7 +15,7 @@ export default function Header({ locale }: { locale: "en" | "he" }) {
   };
   const cssClassesSm = {
     divClass:
-      "group-data-[navlist=false]:hidden  group-data-[navlist=true]:flex flex-col items-center justify-center bg-black/5 backdrop-blur-[3px] animate-nav origin-top",
+      "group-data-[navlist=false]:hidden  group-data-[navlist=true]:flex flex-col items-center justify-center bg-black/5 backdrop-blur-[4px] animate-nav origin-top",
     ulClass: "flex gap-3 flex-col items-center justify-center py-3",
     locale: locale,
   };

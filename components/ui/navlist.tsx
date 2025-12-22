@@ -27,7 +27,7 @@ export default function Navlist({ divClass, ulClass, locale }: cssClasses) {
           <Link href={"blog"}>{translation[locale].blog}</Link>
         </li>
       </ul>
-      <div className="flex gap-3">
+      <div className="flex gap-3 pb-3 lg:pb-0">
         <ToggleLanguage locale={locale} />
         <SessionButton sessionButtontext={translation[locale].bookasession} />
       </div>
