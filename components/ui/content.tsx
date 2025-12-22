@@ -1,5 +1,5 @@
-import { he } from "@/app/content/he.content.json";
-import { en } from "@/app/content/en.content.json";
+import { he } from "@/app/content/heContent.json";
+import { en } from "@/app/content/enContent.json";
 import Testimonials from "./testimonials";
 import Howitworks from "./howitworks";
 import Topic from "./topic";
