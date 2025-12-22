@@ -29,16 +29,22 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
             </a>
           ))}
         </nav>
-        <Topic topic={translate[locale].whatIsChildbirth} />
-        <Topic topic={translate[locale].commonChallenges} />
+        <Topic
+          topic={translate[locale].whatIsChildbirth}
+          id="whatIsChildbirth"
+        />
+        <Topic
+          topic={translate[locale].commonChallenges}
+          id="commonChallenges"
+        />
         <section id="common-challenges" className="mb-6">
           <div className="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded mt-4 text-sm">
             {translate[locale].commonChallenges.note}
           </div>
         </section>
-        <Topic topic={translate[locale].whoHelps} />
-        <Topic topic={translate[locale].whenToSeekHelp} />
-        <Topic topic={translate[locale].whyItMatters} />
+        <Topic topic={translate[locale].whoHelps} id="whoHelps" />
+        <Topic topic={translate[locale].whenToSeekHelp} id="henToSeekHelp" />
+        <Topic topic={translate[locale].whyItMatters} id="hyItMatters" />
         <Testimonials testimonials={translate[locale].testimonials} />
         <section className="max-w-4xl mx-auto px-4 py-6">
           <section id="testimonials" className="mb-6 text-slate-600">
