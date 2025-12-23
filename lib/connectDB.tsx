@@ -1,0 +1,27 @@
+import mongoose from "mongoose";
+
+export default async function connectDB() {
+  if (mongoose.connection?.readyState === 1) {
+    console.log("✅ MongoDB already connected");
+    return;
+  }
+
+  if (mongoose.connection?.readyState === 2) {
+    console.log("⏳ MongoDB connection in progress...");
+    return;
+  }
+
+  try {
+    await mongoose
+      .connect(process.env.DATA_BASE_URI as string, {
+        maxPoolSize: 10,
+        minPoolSize: 1,
+        connectTimeoutMS: 15000,
+        serverSelectionTimeoutMS: 11000,
+        socketTimeoutMS: 180000,
+      })
+      .then(() => console.log("connected to mongoDB"));
+  } catch (error) {
+    console.log(error);
+  }
+}
