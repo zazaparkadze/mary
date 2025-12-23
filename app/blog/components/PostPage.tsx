@@ -1,18 +1,7 @@
 "use client";
 export const dynamic = "force-dynamic";
 import { useState } from "react";
-type Post = {
-  _id?: string | object;
-  id: number;
-  title: string;
-  dateTime: string;
-  postBody: string;
-  likes?: number;
-  disLikes?: number;
-  comments?: string[];
-  __v?: number;
-  userId?: number;
-};
+
 type Props = {
   post: Post;
 };

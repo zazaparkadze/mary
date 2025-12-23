@@ -4,19 +4,6 @@ import CreateMongoPost from "./components/CreateMongoPost";
 import SearchForm from "./components/SearchForm";
 import PostPageList from "./components/PostPageList";
 
-type Post = {
-  _id?: string | object;
-  id: number;
-  title: string;
-  dateTime: string;
-  postBody: string;
-  likes?: number;
-  disLikes?: number;
-  comments?: string[];
-  __v?: number;
-  userId?: number;
-};
-
 export default async function page() {
   const posts: Post[] = JSON.parse(await getAllPosts());
   return (
