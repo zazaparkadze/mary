@@ -1,4 +1,5 @@
 import { Instagram, Twitter, Facebook } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -8,15 +9,25 @@ export default function Footer() {
           © 2025 All rights reserved.
         </p>
         <div className="flex gap-4">
-          <a href="#" aria-label="Twitter">
-            <Twitter className="h-5 w-5" />
-          </a>
-          <a href="#" aria-label="Instagram">
+          {/*  <a href="#" aria-label="Twitter"> */}
+          <Twitter className="h-5 w-5" />
+          {/* </a> */}
+          <Link
+            aria-label="Instagram"
+            href="https://www.instagram.com/marigilels"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Instagram className="h-5 w-5" />
-          </a>
-          <a href="#" aria-label="Facebook">
+          </Link>
+          <Link
+            aria-label="Facebook"
+            href="https://www.facebook.com/hanukashvili"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <Facebook className="h-5 w-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
