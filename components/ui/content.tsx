@@ -1,9 +1,15 @@
+import Image from "next/image";
+import { Rouge_Script } from "next/font/google";
 import { he } from "@/app/content/heContent.json";
 import { en } from "@/app/content/enContent.json";
 import Testimonials from "./testimonials";
 import Howitworks from "./howitworks";
 import Topic from "./topic";
 const translate = { en, he };
+const rouge_script = Rouge_Script({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function Content({ locale }: { locale: "en" | "he" }) {
   return (
@@ -16,6 +22,15 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
           {translate[locale].aClearSafeOverview}
         </p>
       </header>
+      <div className="flex flex-col w-full items-center justify-center">
+        <Image
+          src={"/img-3.png"}
+          alt="mother-with-baby-street"
+          width={512}
+          height={768}
+        />
+        <p className={`${rouge_script.className} text-3xl py-2`}>The Start</p>
+      </div>
       <article className="bg-white shadow-lg border border-gray-200 rounded-xl p-6 md:p-8">
         <p className="text-gray-600 mb-4">{translate[locale].introText}</p>
         <nav className="flex flex-wrap gap-3 mt-2 mb-6">
@@ -46,6 +61,17 @@ export default function Content({ locale }: { locale: "en" | "he" }) {
         <Topic topic={translate[locale].whenToSeekHelp} id="whenToSeekHelp" />
         <Topic topic={translate[locale].whyItMatters} id="whyItMatters" />
         <Testimonials testimonials={translate[locale].testimonials} />
+        <div className="flex flex-col w-full items-center justify-center">
+          <Image
+            src={"/img-1.png"}
+            alt="mother-with-baby"
+            width={512}
+            height={768}
+          />
+          <p className={`${rouge_script.className} text-3xl py-2`}>
+            The Journey Begins
+          </p>
+        </div>
         <section className="max-w-4xl mx-auto px-4 py-6">
           <section id="testimonials" className="mb-6 text-slate-600">
             <div className="space-y-6">
