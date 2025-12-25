@@ -11,7 +11,7 @@ export default function PostPage({ post }: postProps) {
   };
 
   const content = (
-    <section className="flex flex-col mt-3 pt-3 max-w-56 lg:max-w-7xl bg-white shadow-lg border border-gray-200 rounded-xl p-6 lg:p-8">
+    <section className="flex flex-col m-3  lg:max-w-7xl bg-white shadow-lg border border-gray-200 rounded-xl p-4 lg:p-8">
       <p className="text-xl">Title: {title}</p>
       <p className="text-[14px]">Time: {dateTime}</p>
       <p>{postBody}</p>

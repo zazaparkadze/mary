@@ -14,13 +14,19 @@ export default async function page() {
       id="#top"
       className="flex flex-col items-center min-h-screen bg-gray-50"
     >
-      <div className="w-full flex flex-col items-end fixed top-[25%] right-2 text-xl gap-y-3">
-        <Button variant={"outline"} className="w-3 border-[#848679]">
+      <div className="w-full flex flex-col items-end fixed top-[25%] right-4 text-xl gap-y-3">
+        <Button
+          variant={"outline"}
+          className="w-3 border-[#848679] bg-transparent"
+        >
           <Link href="/">
             <House />
           </Link>
         </Button>
-        <Button variant={"outline"} className="w-3 border-[#848679]">
+        <Button
+          variant={"outline"}
+          className="w-3 border-[#848679] bg-transparent"
+        >
           <Link href="#top">
             <ArrowUp />
           </Link>
