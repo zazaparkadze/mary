@@ -10,3 +10,11 @@ type Post = {
   __v?: number;
   userId?: number;
 };
+
+type Props = {
+  posts: Post[];
+};
+
+type postProps = {
+  post: Post;
+};

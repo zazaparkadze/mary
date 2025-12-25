@@ -20,7 +20,7 @@ export default function CreateMongoPost() {
           ref.current?.reset();
           router.refresh();
         }}
-        className="flex flex-col items-start lg:items-center gap-2 rounded space-3"
+        className="flex flex-col items-center justify-center min-h-screen lg:items-center gap-2 rounded space-3"
       >
         <label htmlFor="title" className="px-2 pb-1 pt-2 ">
           {" "}
@@ -31,7 +31,8 @@ export default function CreateMongoPost() {
           name="title"
           ref={inputRef}
           placeholder="title"
-          className="border px-2 py-1 rounded  border-gray-400 lg:w-[300px]"
+          required
+          className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px] w-full"
         />
         <label htmlFor="newpost" className="px-2 py-1  border-gray-400">
           {" "}
@@ -40,9 +41,10 @@ export default function CreateMongoPost() {
         <textarea
           name="newpost"
           placeholder="new post"
-          className="border px-2 py-1 rounded  border-gray-400 lg:w-[300px]"
+          required
+          className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px]"
         />
-        <button className="px-4 py-1 my-2 rounded border border-gray-400 lg:w-[300px]">
+        <button className="px-4 py-1 my-2 rounded border w-full border-gray-400 lg:w-[600px]">
           submit
         </button>
       </form>

@@ -3,10 +3,6 @@
 import { useData } from "../DataContext";
 import PostPage from "./PostPage";
 
-type Props = {
-  posts: Post[];
-};
-
 export default function PostPageList({ posts }: Props) {
   const { search } = useData();
 
