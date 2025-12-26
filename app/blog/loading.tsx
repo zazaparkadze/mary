@@ -1,9 +1,10 @@
-import React from "react";
+import { Spinner } from "@/components/ui/spinner";
 
 export default function loading() {
   return (
-    <p className="text-2xl text-green-700 flex flex-col min-h-screen justify-center items-center">
-      Loading posts...
-    </p>
+    <div className="flex items-center justify-center min-h-screen">
+      <p className="text-2xl text-green-700 ">Loading posts...</p>
+      <Spinner className=" text-green-700" />
+    </div>
   );
 }

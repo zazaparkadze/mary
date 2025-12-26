@@ -2,6 +2,7 @@
 import { createMongoPost } from "../action";
 import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Spinner } from "@/components/ui/spinner";
 
 export default function CreateMongoPost() {
   const ref = useRef<HTMLFormElement>(null);
@@ -49,7 +50,10 @@ export default function CreateMongoPost() {
           onClick={() => setSubmitting(true)}
           className="px-4 py-1 my-2 rounded border w-full border-gray-400 lg:w-[600px]"
         >
-          {!submitting ? "submit" : "submitting, please wait..."}
+          <div className="flex items-center">
+            {!submitting ? "submit" : "submitting, wait... "}
+            {submitting && <Spinner />}
+          </div>
         </button>
       </form>
     </div>
