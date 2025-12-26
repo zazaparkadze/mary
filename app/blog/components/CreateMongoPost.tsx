@@ -1,11 +1,12 @@
 "use client";
 import { createMongoPost } from "../action";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function CreateMongoPost() {
   const ref = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [submitting, setSubmitting] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -18,7 +19,6 @@ export default function CreateMongoPost() {
         action={async (formData) => {
           await createMongoPost(formData);
           ref.current?.reset();
-          //router.refresh();
           router.push("/blog");
         }}
         className="flex flex-col items-center justify-center min-h-screen lg:items-center gap-2 rounded space-3"
@@ -45,8 +45,11 @@ export default function CreateMongoPost() {
           required
           className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px]"
         />
-        <button className="px-4 py-1 my-2 rounded border w-full border-gray-400 lg:w-[600px]">
-          submit
+        <button
+          onClick={() => setSubmitting(true)}
+          className="px-4 py-1 my-2 rounded border w-full border-gray-400 lg:w-[600px]"
+        >
+          {!submitting ? "submit" : "submitting, please wait..."}
         </button>
       </form>
     </div>

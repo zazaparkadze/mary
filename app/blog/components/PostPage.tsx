@@ -22,9 +22,11 @@ export default function PostPage({ post }: postProps) {
 
   const content = (
     <section className="flex flex-col m-3  lg:max-w-7xl bg-white shadow-lg border border-gray-200 rounded-xl p-4 lg:p-8">
-      <p className="text-xl pb-2">Title: {title}</p>
-      <p className="text-[14px] pb-1 font-semibold">Time: {dateTime}</p>
-      <p>{postBody}</p>
+      <p className="text-xl pb-2 wrap-anywhere">Title: {title}</p>
+      <p className="text-[14px] pb-1 font-semibold wrap-anywhere">
+        Time: {dateTime}
+      </p>
+      <p className="overflow-auto wrap-anywhere">{postBody}</p>
       <p>Posted By {userId ? userId : "anonimous"}</p>
       <br />
       <hr />
