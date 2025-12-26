@@ -27,7 +27,6 @@ export default function BlogLayout({
       <div
         lang="en"
         className={`${geistSans.variable} ${geistMono.variable} antialiased home scroll-smooth`}
-        data-scroll-behavior="smooth"
       >
         {children}
       </div>

@@ -18,7 +18,8 @@ export default function CreateMongoPost() {
         action={async (formData) => {
           await createMongoPost(formData);
           ref.current?.reset();
-          router.refresh();
+          //router.refresh();
+          router.push("/blog");
         }}
         className="flex flex-col items-center justify-center min-h-screen lg:items-center gap-2 rounded space-3"
       >
