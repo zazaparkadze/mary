@@ -14,5 +14,13 @@
     "blog": "בלוג",
     "services": "שירותים",
     "bookasession": "להזמין מפגש"
+  },
+  "ru": {
+    "aboutme": "About me",
+    "howitworks": "How it Works",
+    "testimonials": "Testimonials",
+    "blog": "Blog",
+    "services": "Services",
+    "bookasession": "Book a Session"
   }
 }

@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function PostPage({
   post,
   locale,
-}: postProps & { locale: "he" | "en" }) {
+}: { post: Post } & { locale: Locale }) {
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
   const { title, postBody, dateTime, userId, id } = post;
 
@@ -26,10 +26,10 @@ export default function PostPage({
   const content = (
     <section className="flex flex-col m-3  lg:max-w-7xl bg-white shadow-lg border border-gray-200 rounded-xl p-4 lg:p-8">
       <p className="text-xl pb-4 wrap-anywhere">
-        {locale === "en" ? "Title " : " כותרת"}: {title}
+        {locale !== "he" ? "Title " : " כותרת"}: {title}
       </p>
       <p className="text-[14px] pb-4 font-semibold wrap-anywhere">
-        {locale === "en" ? "Date" : " תאריך"}: {dateTime}
+        {locale !== "he" ? "Date" : " תאריך"}: {dateTime}
       </p>
       <p className="overflow-auto wrap-anywhere">{postBody}</p>
       <p>Posted By {userId ? userId : "anonimous"}</p>

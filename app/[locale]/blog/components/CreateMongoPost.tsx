@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Spinner } from "@/components/ui/spinner";
 
-export default function CreateMongoPost({ locale }: { locale: "he" | "en" }) {
+export default function CreateMongoPost({ locale }: { locale: Locale }) {
   const ref = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -26,23 +26,23 @@ export default function CreateMongoPost({ locale }: { locale: "he" | "en" }) {
       >
         <label htmlFor="title" className="px-2 pb-1 pt-2 ">
           {" "}
-          {locale === "en" ? " Title" : "כותרת"}
+          {locale === "he" ? "כותרת" : " Title"}
         </label>
         <input
           type="text"
           name="title"
           ref={inputRef}
-          placeholder={locale === "en" ? "Title" : "כותרת"}
+          placeholder={locale !== "he" ? "Title" : "כותרת"}
           required
           className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px] w-full"
         />
         <label htmlFor="newpost" className="px-2 py-1  border-gray-400">
           {" "}
-          {locale === "en" ? "Post" : "פוסט"}
+          {locale !== "he" ? "Post" : "פוסט"}
         </label>
         <textarea
           name="newpost"
-          placeholder={locale === "en" ? "start typing" : "להתחיל להקליד"}
+          placeholder={locale !== "he" ? "start typing" : "להתחיל להקליד"}
           required
           className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px]"
         />
@@ -52,10 +52,10 @@ export default function CreateMongoPost({ locale }: { locale: "he" | "en" }) {
         >
           <div className="flex items-center justify-center ">
             {!submitting
-              ? locale === "en"
+              ? locale !== "he"
                 ? "submit"
                 : "להגיש"
-              : locale === "en"
+              : locale !== "he"
               ? "submitting, wait... "
               : "שולח, רגע..."}
             {submitting && <Spinner />}

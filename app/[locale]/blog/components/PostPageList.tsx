@@ -7,7 +7,7 @@ export default function PostPageList({
   posts,
   recentPosts,
   locale,
-}: Props & { recentPosts: string; locale: "he" | "en" }) {
+}: Props & { recentPosts: string; locale: Locale }) {
   const { search } = useData();
 
   const filteredPosts = posts.filter(

@@ -13,10 +13,10 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const localeParams = await params;
-  const locale = localeParams.locale as "en" | "he";
-  const isRTL = locale === "en";
+  const locale = localeParams.locale as Locale;
+  const isRTL = locale === "he";
   return (
-    <div lang={locale} dir={!isRTL ? "rtl" : "ltr"}>
+    <div lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       {children}
     </div>
   );

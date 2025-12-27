@@ -2,16 +2,17 @@ import Image from "next/image";
 import { Rouge_Script } from "next/font/google";
 import { he } from "@/app/content/heContent.json";
 import { en } from "@/app/content/enContent.json";
+import { ru } from "@/app/content/ruContent.json";
 import Testimonials from "./testimonials";
 import Howitworks from "./howitworks";
 import Topic from "./topic";
-const translate = { en, he };
+const translate = { en, he, ru };
 const rouge_script = Rouge_Script({
   subsets: ["latin"],
   weight: ["400"],
 });
 
-export default function Content({ locale }: { locale: "en" | "he" }) {
+export default function Content({ locale }: { locale: Locale }) {
   return (
     <div className="flex flex-col grow p-5 w-full max-w-7xl">
       <header className="text-center mb-6">

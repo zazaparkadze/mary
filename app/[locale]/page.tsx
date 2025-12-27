@@ -8,7 +8,7 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const localeParams = await params;
-  const locale = localeParams.locale as "en" | "he";
+  const locale = localeParams.locale as Locale;
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans dark:bg-black">
       <Header locale={locale} />

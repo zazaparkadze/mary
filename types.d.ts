@@ -15,6 +15,4 @@ type Props = {
   posts: Post[];
 };
 
-type postProps = {
-  post: Post;
-};
+type Locale = Locale;

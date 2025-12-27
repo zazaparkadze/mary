@@ -7,8 +7,7 @@ export default async function page({
   params: Promise<{ locale: string }>;
 }) {
   const rawParams = await params;
-  console.log(rawParams);
-  const locale = rawParams.locale as "he" | "en";
+  const locale = rawParams.locale as Locale;
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-50">
       <CreateMongoPost locale={locale} />

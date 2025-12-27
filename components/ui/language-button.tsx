@@ -13,7 +13,7 @@ import { useState } from "react";
 
 export default function ToggleLanguage({ locale }: { locale: string }) {
   const router = useRouter();
-  const [lang, setLang] = useState(locale === "en" ? "English" : "עברית");
+  const [lang, setLang] = useState(locale !== "he" ? "English" : "עברית");
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -54,14 +54,17 @@ export default function ToggleLanguage({ locale }: { locale: string }) {
             עברית
           </DropdownMenuItem>
         )}
-        {/*   {lang !== "Русский" && (
+        {lang !== "Русский" && (
           <DropdownMenuItem
             className="text-[#a36f6f] hover:bg-[#a36f6f]! hover:text-white!"
-            onClick={() => setLang("Русский")}
+            onClick={() => {
+              setLang("Русский");
+              router.push("/ru");
+            }}
           >
             Русский
-          </DropdownMenuItem> [#a36f6f]
-        )} */}
+          </DropdownMenuItem>
+        )}
       </DropdownMenuContent>
     </DropdownMenu>
   );

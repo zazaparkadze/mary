@@ -1,16 +1,16 @@
 import Link from "next/link";
 import SessionButton from "./session-button";
 import ToggleLanguage from "./language-button";
-import { he, en } from "@/app/content/navList.json";
+import { he, en, ru } from "@/app/content/navList.json";
 
 type cssClasses = {
   divClass: string;
   ulClass: string;
-  locale: "en" | "he";
+  locale: Locale;
 };
 
 export default function Navlist({ divClass, ulClass, locale }: cssClasses) {
-  const translation = { he, en };
+  const translation = { he, en, ru };
 
   return (
     <div className={`${divClass}`}>

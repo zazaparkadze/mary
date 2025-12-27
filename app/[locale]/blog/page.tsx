@@ -7,9 +7,10 @@ import Link from "next/link";
 import { House, ArrowUp } from "lucide-react";
 import { en } from "@/app/content/enContent.json";
 import { he } from "@/app/content/heContent.json";
+import { ru } from "@/app/content/ruContent.json";
 import clsx from "clsx";
 
-const translate = { en, he };
+const translate = { en, he, ru };
 
 export default async function page({
   params,
@@ -17,7 +18,7 @@ export default async function page({
   params: Promise<{ locale: string }>;
 }) {
   const rawParams = await params;
-  const locale = rawParams.locale as "he" | "en";
+  const locale = rawParams.locale as Locale;
   const posts: Post[] = JSON.parse(await getAllPosts());
 
   return (
