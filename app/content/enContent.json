@@ -116,6 +116,9 @@
       ]
     },
     "clientReview": "Kind, professional, and incredibly supportive. I felt empowered and cared for throughout my entire birth journey",
-    "downloadPdf": "Download a printable PDF"
+    "downloadPdf": "Download a printable PDF",
+    "createNewPost": "Create New Post",
+    "searchPlaceholder": "search",
+    "recentPosts": "Recent Posts"
   }
 }

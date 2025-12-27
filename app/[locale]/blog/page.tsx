@@ -5,8 +5,19 @@ import PostPageList from "./components/PostPageList";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { House, ArrowUp } from "lucide-react";
+import { en } from "@/app/content/enContent.json";
+import { he } from "@/app/content/heContent.json";
+import clsx from "clsx";
 
-export default async function page() {
+const translate = { en, he };
+
+export default async function page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const rawParams = await params;
+  const locale = rawParams.locale as "he" | "en";
   const posts: Post[] = JSON.parse(await getAllPosts());
 
   return (
@@ -14,7 +25,12 @@ export default async function page() {
       id="#top"
       className="flex flex-col items-center min-h-screen bg-gray-50"
     >
-      <div className="w-full flex flex-col items-end fixed top-[25%] right-4 text-xl gap-y-3">
+      <div
+        className={clsx(
+          "w-full flex flex-col items-end fixed top-[25%] right-4 text-xl gap-y-3",
+          [{ "left-4": locale === "he" }]
+        )}
+      >
         <Button
           variant={"outline"}
           className="w-3 border-[#848679] bg-transparent"
@@ -33,10 +49,16 @@ export default async function page() {
         </Button>
       </div>
       <Button variant={"outline"} className="my-5 border-[#848679]">
-        <Link href={"/blog/newpost"}>Create New Post</Link>
+        <Link href={`/${locale}/blog/newpost`}>
+          {translate[locale].createNewPost}
+        </Link>
       </Button>
-      <SearchForm />
-      <PostPageList posts={posts} />
+      <SearchForm searchPlaceholder={translate[locale].searchPlaceholder} />
+      <PostPageList
+        posts={posts}
+        recentPosts={translate[locale].recentPosts}
+        locale={locale}
+      />
     </div>
   );
 }

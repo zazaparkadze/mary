@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SessionButton from "./session-button";
 import ToggleLanguage from "./language-button";
-import { he, en } from "../../app/content/navList.json";
+import { he, en } from "@/app/content/navList.json";
 
 type cssClasses = {
   divClass: string;
@@ -24,7 +24,7 @@ export default function Navlist({ divClass, ulClass, locale }: cssClasses) {
           <a href="#how-it-works">{translation[locale].howitworks}</a>
         </li>
         <li>
-          <Link href={"blog"}>{translation[locale].blog}</Link>
+          <Link href={`${locale}/blog`}>{translation[locale].blog}</Link>
         </li>
       </ul>
       <div className="flex gap-3 pb-3 lg:pb-0">

@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Spinner } from "@/components/ui/spinner";
 
-export default function CreateMongoPost() {
+export default function CreateMongoPost({ locale }: { locale: "he" | "en" }) {
   const ref = useRef<HTMLFormElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -20,29 +20,29 @@ export default function CreateMongoPost() {
         action={async (formData) => {
           await createMongoPost(formData);
           ref.current?.reset();
-          router.push("/blog");
+          router.push(`/${locale}/blog`);
         }}
         className="flex flex-col items-center justify-center min-h-screen lg:items-center gap-2 rounded space-3"
       >
         <label htmlFor="title" className="px-2 pb-1 pt-2 ">
           {" "}
-          Title
+          {locale === "en" ? " Title" : "כותרת"}
         </label>
         <input
           type="text"
           name="title"
           ref={inputRef}
-          placeholder="title"
+          placeholder={locale === "en" ? "Title" : "כותרת"}
           required
           className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px] w-full"
         />
         <label htmlFor="newpost" className="px-2 py-1  border-gray-400">
           {" "}
-          Post
+          {locale === "en" ? "Post" : "פוסט"}
         </label>
         <textarea
           name="newpost"
-          placeholder="new post"
+          placeholder={locale === "en" ? "start typing" : "להתחיל להקליד"}
           required
           className="border px-2 py-1 rounded  border-gray-400 lg:w-[600px]"
         />
@@ -50,8 +50,14 @@ export default function CreateMongoPost() {
           onClick={() => setSubmitting(true)}
           className="px-4 py-1 my-2 rounded border w-full border-gray-400 lg:w-[600px]"
         >
-          <div className="flex items-center">
-            {!submitting ? "submit" : "submitting, wait... "}
+          <div className="flex items-center justify-center ">
+            {!submitting
+              ? locale === "en"
+                ? "submit"
+                : "להגיש"
+              : locale === "en"
+              ? "submitting, wait... "
+              : "שולח, רגע..."}
             {submitting && <Spinner />}
           </div>
         </button>

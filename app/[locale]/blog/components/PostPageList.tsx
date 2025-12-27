@@ -3,7 +3,11 @@
 import { useData } from "../DataContext";
 import PostPage from "./PostPage";
 
-export default function PostPageList({ posts }: Props) {
+export default function PostPageList({
+  posts,
+  recentPosts,
+  locale,
+}: Props & { recentPosts: string; locale: "he" | "en" }) {
   const { search } = useData();
 
   const filteredPosts = posts.filter(
@@ -14,10 +18,10 @@ export default function PostPageList({ posts }: Props) {
   return (
     <div className="max-w-[1000px]">
       <p className="font-semibold text-center p-3 m-6 text-3xl bg-white shadow-lg border border-gray-200 rounded-xl">
-        Recent Posts
+        {recentPosts}
       </p>
       {filteredPosts.reverse().map((post) => (
-        <PostPage post={post} key={post.id} />
+        <PostPage post={post} key={post.id} locale={locale} />
       ))}
     </div>
   );
