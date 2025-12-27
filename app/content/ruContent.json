@@ -1,124 +1,125 @@
 {
   "ru": {
-    "understandingChildBirth": "Understanding Childbirth: What Happens, Challenges, and Professional Help",
-    "aClearSafeOverview": "A clear, safe overview of childbirth — written in simple, calm language.",
+    "understandingChildBirth": "Понимание родов: что происходит, какие бывают сложности и профессиональная помощь",
+    "aClearSafeOverview": "Понятный и безопасный обзор родов — написан простым и спокойным языком.",
 
-    "introText": "This article explains childbirth in an informative, non-graphic way. It is suitable for basic health knowledge and understanding how professionals support the process.",
+    "introText": "В этой статье роды объясняются в информативной и неописательной форме. Она подходит для базового понимания здоровья и того, как специалисты поддерживают этот процесс.",
 
     "nav": {
-      "whatIsChildbirth": "What is childbirth?",
-      "commonChallenges": "Common challenges.",
-      "whoHelps": "Professionals who help.",
-      "whenToSeekHelp": "When to get help?",
-      "whyItMatters": "Why it matters?"
+      "whatIsChildbirth": "Что такое роды?",
+      "commonChallenges": "Распространённые трудности",
+      "whoHelps": "Кто оказывает помощь",
+      "whenToSeekHelp": "Когда обращаться за помощью?",
+      "whyItMatters": "Почему это важно?"
     },
 
     "whatIsChildbirth": {
-      "title": "What is childbirth?",
-      "description": "Childbirth is the process of delivering a baby. It usually happens in three stages:",
+      "title": "Что такое роды?",
+      "description": "Роды — это процесс появления ребёнка на свет. Обычно он проходит в три этапа:",
       "items": [
-        "Early and active labor — contractions help the cervix open.",
-        "Birth — the baby moves through the birth canal.",
-        "Placenta delivery — the process completes after the baby is born."
+        "Ранние и активные схватки — сокращения помогают раскрытию шейки матки.",
+        "Рождение — ребёнок проходит через родовые пути.",
+        "Рождение плаценты — процесс завершается после появления ребёнка."
       ]
     },
 
     "commonChallenges": {
-      "title": "Common challenges",
-      "description": "Some difficulties may occur during childbirth, such as:",
+      "title": "Распространённые трудности",
+      "description": "Во время родов могут возникать некоторые сложности, например:",
       "items": [
-        "Long labor — sometimes progress is slower than expected.",
-        "Pain or exhaustion — birth is physically intense, so support is important.",
-        "Baby’s position — not all positions make birth easier and may require assistance.",
-        "Unexpected changes — such as shifts in heart rate or contraction patterns."
+        "Длительные роды — иногда процесс продвигается медленнее, чем ожидалось.",
+        "Боль или усталость — роды физически интенсивны, поэтому поддержка очень важна.",
+        "Положение ребёнка — не все позиции облегчают роды и могут потребовать помощи.",
+        "Неожиданные изменения — например, изменения сердечного ритма или характера схваток."
       ],
-      "note": "These challenges are common, and trained professionals monitor them to keep both the parent and baby safe."
+      "note": "Такие трудности встречаются часто, и обученные специалисты следят за состоянием, чтобы обеспечить безопасность родителя и ребёнка."
     },
 
     "whoHelps": {
-      "title": "Professionals who help",
-      "description": "High level professionals",
+      "title": "Специалисты, которые помогают",
+      "description": "Квалифицированные специалисты высокого уровня",
       "items": [
-        "Obstetricians (OB-GYNs) — doctors specialized in pregnancy and birth.",
-        "Midwives — trained professionals who support many types of deliveries.",
-        "Nurses — assist with monitoring and care during labor.",
-        "Doulas — provide emotional and practical (non-medical) support."
+        "Акушеры-гинекологи — врачи, специализирующиеся на беременности и родах.",
+        "Акушерки — обученные специалисты, сопровождающие многие виды родов.",
+        "Медсёстры — помогают с наблюдением и уходом во время родов.",
+        "Доула — оказывает эмоциональную и практическую (немедицинскую) поддержку."
       ]
     },
 
     "whenToSeekHelp": {
-      "title": "When to seek professional help",
-      "description": "Professional support is always recommended, especially if:",
+      "title": "Когда стоит обратиться за профессиональной помощью",
+      "description": "Профессиональная поддержка рекомендуется всегда, особенно если:",
       "items": [
-        "Labor slows down or stops progressing.",
-        "There is intense or unusual pain.",
-        "The baby shows signs of stress (monitored by medical staff).",
-        "Symptoms such as fever or unusual bleeding appear."
+        "Роды замедляются или перестают продвигаться.",
+        "Возникает сильная или необычная боль.",
+        "У ребёнка появляются признаки стресса (контролируется медицинским персоналом).",
+        "Появляются симптомы, такие как высокая температура или необычные кровянистые выделения."
       ]
     },
 
     "whyItMatters": {
-      "title": "Why understanding childbirth matters",
-      "description": "Professional support:",
+      "title": "Почему важно понимать процесс родов",
+      "description": "Профессиональная поддержка:",
       "items": [
-        "Builds essential basic health knowledge.",
-        "Helps you support friends or family who may be expecting.",
-        "Acknowledges the physical and emotional effort involved in birth."
+        "Формирует базовые знания о здоровье.",
+        "Помогает поддержать друзей или близких, ожидающих ребёнка.",
+        "Признаёт физические и эмоциональные усилия, связанные с родами."
       ]
     },
 
     "testimonials": {
-      "title": "Testimonials",
-      "description": "What Parents Are Saying",
+      "title": "Отзывы",
+      "description": "Что говорят родители",
       "items": [
-        "Having Mary as my doula was the best decision I made during my pregnancy. She helped me feel calm, confident, and supported every step of the way. During labor, her presence grounded me and reminded me of my strength. Itruly couldn’t have done this without her.",
-        "From our first meeting, Mary made me feel heard and understood. She respected my wishes, explained everything clearly, and stayed by my side through the most intense moments. I felt safe, empowered, and deeply supported.",
-        "As a first-time mom, I was nervous and unsure of what to expect.Mary answered all my questions with patience and kindness and helped me trust my body. I am so grateful for this positive birth experience.",
-        "Mary helped me feel strong and in control throughout my birth. Her breathing techniques, encouragement, and calm energy made a huge difference. She is knowledgeable, compassionate, and truly passionate about her work.",
-        "After birth, Mary’s support was just as valuable. She helped me adjust emotionally and practically, always reminding me that I was doing an amazing job. Every new parent deserves this kind of care."
+        "Решение пригласить Мэри в качестве доулы стало лучшим выбором за всю мою беременность. Она помогла мне чувствовать спокойствие, уверенность и поддержку на каждом этапе. Во время родов её присутствие помогало мне сохранять внутреннее равновесие и веру в свои силы. Я искренне не справилась бы без неё.",
+        "С нашей первой встречи Мэри дала мне почувствовать, что меня слышат и понимают. Она уважала мои желания, всё объясняла ясно и была рядом в самые интенсивные моменты. Я чувствовала себя в безопасности, уверенной и глубоко поддержанной.",
+        "Как мама в первый раз, я очень волновалась и не знала, чего ожидать. Мэри терпеливо и с добротой отвечала на все мои вопросы и помогла мне довериться своему телу. Я безмерно благодарна за этот позитивный опыт родов.",
+        "Мэри помогла мне чувствовать себя сильной и уверенной на протяжении всех родов. Её дыхательные техники, поддержка и спокойная энергия сыграли огромную роль. Она знающая, чуткая и по-настоящему увлечённая своим делом.",
+        "После родов поддержка Мэри была не менее ценной. Она помогла мне адаптироваться эмоционально и практически, постоянно напоминая, что я отлично справляюсь. Каждый новый родитель заслуживает такой заботы."
       ]
     },
 
     "howItWorks": {
-      "title": "How It Works",
-      "description": "Every family is unique. My role as a doula is to offer continuous, compassionate support before, during, and after birth — honoring your preferences and values.",
+      "title": "Как это работает",
+      "description": "Каждая семья уникальна. Моя роль как доулы — оказывать непрерывную, чуткую поддержку до, во время и после родов, уважая ваши ценности и предпочтения.",
       "steps": [
         {
           "id": 1,
-          "title": "Initial Consultation",
-          "text": "We begin with a relaxed meeting to get to know each other. We talk about your pregnancy, birth hopes, past experiences, and any questions or concerns you may have. This is a space for listening, trust, and connection."
+          "title": "Первая консультация",
+          "text": "Мы начинаем с спокойной встречи, чтобы познакомиться. Мы обсуждаем вашу беременность, ожидания от родов, прошлый опыт и любые вопросы или переживания. Это пространство для доверия, внимания и связи."
         },
         {
           "id": 2,
-          "title": "Prenatal Support",
-          "text": "During pregnancy, we meet to prepare emotionally and practically. We explore birth preferences, comfort techniques, breathing, partner support, and ways to feel informed and confident as you approach your birth."
+          "title": "Поддержка во время беременности",
+          "text": "Во время беременности мы встречаемся для эмоциональной и практической подготовки. Мы обсуждаем предпочтения в родах, техники комфорта, дыхание, поддержку партнёра и способы почувствовать уверенность и информированность."
         },
         {
           "id": 3,
-          "title": "Birth Support",
-          "text": "I offer continuous presence during labor, providing emotional reassurance, physical comfort, and calm guidance. I support you and your partner while respecting your birth team and medical providers."
+          "title": "Поддержка в родах",
+          "text": "Я нахожусь рядом на протяжении всего процесса родов, обеспечивая эмоциональную поддержку, физический комфорт и спокойное сопровождение. Я поддерживаю вас и вашего партнёра, уважая медицинскую команду."
         },
         {
           "id": 4,
-          "title": "Immediate Postpartum Care",
-          "text": "After birth, I remain present to help you settle in, offering gentle support with bonding, feeding, and emotional processing of your birth experience."
+          "title": "Поддержка сразу после родов",
+          "text": "После рождения ребёнка я остаюсь рядом, помогая вам освоиться, мягко поддерживая процесс сближения, кормления и эмоционального осмысления пережитого опыта."
         },
         {
           "id": 5,
-          "title": "Postpartum Follow-Up",
-          "text": "We reconnect after birth to reflect, answer questions, and support your transition into parenthood. This time focuses on reassurance, rest, and emotional care."
+          "title": "Послеродовая встреча",
+          "text": "После родов мы снова встречаемся, чтобы обсудить впечатления, ответить на вопросы и поддержать ваш переход в родительство. Это время для заботы, отдыха и эмоциональной поддержки."
         },
         {
           "id": 6,
-          "title": "Ongoing Respect & Care",
-          "text": "My approach is non-judgmental and inclusive. I support all birth paths and honor your choices. You are always at the center of your own experience."
+          "title": "Постоянное уважение и забота",
+          "text": "Мой подход основан на принятии и отсутствии осуждения. Я поддерживаю любые пути родов и уважаю ваш выбор. Вы всегда находитесь в центре собственного опыта."
         }
       ]
     },
-    "clientReview": "Kind, professional, and incredibly supportive. I felt empowered and cared for throughout my entire birth journey",
-    "downloadPdf": "Download a printable PDF",
-    "createNewPost": "Create New Post",
-    "searchPlaceholder": "search",
-    "recentPosts": "Recent Posts"
+
+    "clientReview": "Добрая, профессиональная и невероятно поддерживающая. На протяжении всего пути родов я чувствовала заботу и уверенность.",
+    "downloadPdf": "Скачать PDF для печати",
+    "createNewPost": "Создать новую запись",
+    "searchPlaceholder": "поиск",
+    "recentPosts": "Недавние публикации"
   }
 }

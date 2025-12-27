@@ -15,4 +15,5 @@ type Props = {
   posts: Post[];
 };
 
-type Locale = Locale;
+const applocales = ["en", "he", "ru"] as const;
+type Locale = (typeof applocales)[number];
