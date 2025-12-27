@@ -13,7 +13,9 @@ import { useState } from "react";
 
 export default function ToggleLanguage({ locale }: { locale: string }) {
   const router = useRouter();
-  const [lang, setLang] = useState(locale !== "he" ? "English" : "עברית");
+  const [lang, setLang] = useState(
+    locale === "en" ? "English" : locale === "he" ? "עברית" : "Русский"
+  );
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
